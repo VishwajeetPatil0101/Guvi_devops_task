@@ -1,0 +1,15 @@
+create folder : mkdir my_folder
+Create file : touch my_file.txt
+Create file : touch another_file.txt
+cat my_file.txt >> another_file.txt
+ls 
+
+
+touch file{1..20}.txt
+rm file1.txt file1.yml
+rm file2.txt file2.yml
+rm file3.txt file3.yml
+rm file4.txt file4.yml
+rm file5.txt file5.yml
+
+ls -ls | head -n 5
