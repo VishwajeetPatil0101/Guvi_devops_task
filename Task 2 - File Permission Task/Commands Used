@@ -1,0 +1,7 @@
+sudo -i     - to login as root user
+
+touch demo.txt   - to create file
+
+chmod 777 demo.txt    - to give permision to all users 
+
+vi demo.txt      - to make changes as ubuntu user after giving permission.
