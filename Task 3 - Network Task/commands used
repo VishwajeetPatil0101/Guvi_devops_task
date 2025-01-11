@@ -1,0 +1,7 @@
+Commands used 
+Ping Guvi.in         --  to get Ip Address of Domain
+nslookup  Guvi.in       -- to get Ip Address of Domain.
+Dig Guvi.in  ---       to get Ip Address of Domain.
+top         -- to find out memory usage.
+ping   -- to test connectivity between two nodes.
+Netstat   --- to check ports of server. 
