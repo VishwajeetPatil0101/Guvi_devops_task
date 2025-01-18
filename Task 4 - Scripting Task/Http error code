@@ -1,0 +1,17 @@
+#! /bin/bash
+
+#URL to check
+URL="https://www.guvi.in"
+
+#get the http status code using curl 
+HTTP_CODE=$(curl -o /dev/null -s -w "%{http_code}" "$URL")
+
+#Print the HTTP status code 
+echo "HTTP status code for $URL:$HTTP_CODE"
+
+#Check the responce code and print a message based on success or failure
+if [["$HTTP_CODE" -ge  && "$HTTP_CODE" -lt 300 ]]; then 
+  echo "success : the website is accessible"
+else 
+  echo "failure : there was an issue accessing the website. "
+fi
