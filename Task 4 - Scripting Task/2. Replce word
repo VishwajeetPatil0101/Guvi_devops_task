@@ -1,0 +1,25 @@
+Questione : Given a file, replace all occurrence of the word "give" with "learning" from 5th line till the end in only those lines that contain the word "welcome"
+
+Answer : #!/bin/bash
+
+# Input file name (provide the file name here)
+input_file="file.txt"
+output_file="output.txt"
+
+# Read the content of the input file into an array
+mapfile -t lines < "$input_file"
+
+# Process the lines
+for i in "${!lines[@]}"; do
+    # Check if the line contains the word "welcome" and is the 5th line or later
+    if [[ "${lines[$i]}" == *"welcome"* ]] && (( i >= 4 )); then
+        # Replace "give" with "learning"
+        lines[$i]="${lines[$i]//give/learning}"
+    fi
+done
+
+# Save the modified content to an output file
+printf "%s\n" "${lines[@]}" > "$output_file"
+
+echo "Content has been modified and saved to $output_file."
+
