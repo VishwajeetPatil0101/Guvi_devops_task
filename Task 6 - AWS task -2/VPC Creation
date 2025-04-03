@@ -1,0 +1,22 @@
+Here are steps that I followed to create VPC
+
+1. Go to AWS VPC Dashboard
+  - Create VPC.
+  - Choose CIDR - 10.0.0.0/16
+
+2. Create Internet Gateway and associate it with Our VPC.
+
+3. Create Route Table for Public Subnet.
+  -Edit Route for all type IP and choose target As Internet gateway.
+  - Choose subnet association and select Public Subnet.
+
+4. Create Public Subnet with CIDR range 10.0.0.0/24 
+5. Create Private subnet with CIDR range 10.0.1.0/24
+
+6. Create Route Table for Private Subnet.
+  - Do not edit Route
+  - Choose subnet association and select Private Subnet.
+
+7. Launch EC2 Instance in Our Created VPC and in Public Subnet.
+  - Accessed That Instance. 
+
