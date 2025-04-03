@@ -1,0 +1,15 @@
+here I have practiced some docker commands
+
+docker ps: Lists running containers.
+docker run: Creates and starts a new container from an image.
+
+Managing Images:
+docker pull: Downloads an image from a registry.
+
+docker images: Lists all local images.
+
+Docker network : 
+  - docker network
+
+Docker volume :
+  - docker volume create
