@@ -1,0 +1,11 @@
+Steps I have followed to complete task.
+
+I have successfully launched EC2 instances, One Linux and windows 
+
+installed web servers on both instances
+
+created & attached EBS volumes to both instance
+
+taken a snapshot 
+
+created a new volume from the snapshot. 
