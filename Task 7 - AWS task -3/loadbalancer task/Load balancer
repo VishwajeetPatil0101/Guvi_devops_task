@@ -1,0 +1,8 @@
+here steps I followed to create load balancer
+
+1. created two ec2 instance with http 80 allowed
+
+2. created Target group and included two ec2 instance which creted before.
+
+3. creted load balancer and select the target group.
+
