@@ -1,0 +1,101 @@
+Here are some git commands that I have practiced
+
+1. Create a New Directory & Populate It
+
+mkdir my-git-project
+cd my-git-project
+
+# Create sample script files
+  
+echo "echo 'Hello, World!'" > script1.sh
+echo "echo 'This is script2'" > script2.sh
+
+# Make scripts executable
+  
+chmod +x script1.sh script2.sh
+
+# Initialize a Git repository
+  
+git init
+
+2. Create a Repository on GitHub
+Go to GitHub
+Click New Repository
+Set Repository Name: my-git-project
+DO NOT initialize with a README (we'll do it locally)
+Copy the remote repository URL
+Now, link the local repo to GitHub:
+
+
+# Add remote repository
+git remote add origin https://github.com/your-username/my-git-project.git
+
+# Verify
+git remote -v
+
+3. Commit & Push Code
+
+git add .
+git commit -m "Initial commit with script files"
+git branch -M main
+git push -u origin main
+
+4. Git Merge Example
+Create and Merge a New Branch
+
+# Create a new branch
+git checkout -b new-feature
+
+# Modify script1.sh
+echo "echo 'New Feature added'" >> script1.sh
+
+# Commit changes
+git add script1.sh
+git commit -m "Added a new feature"
+
+# Switch to main branch
+git checkout main
+
+# Merge new-feature into main
+git merge new-feature
+
+# Push to GitHub
+git push origin main
+
+
+5. Git Rebase Example
+Create a Second Feature Branch
+
+# Create another feature branch
+git checkout -b another-feature
+
+# Modify script2.sh
+echo "echo 'Another feature added'" >> script2.sh
+
+# Commit changes
+git add script2.sh
+git commit -m "Added another feature"
+
+# Switch back to main
+git checkout main
+
+# Rebase another-feature onto main
+git rebase another-feature
+
+# Push to GitHub
+git push origin main
+
+6. Git Stash Example
+Stash Uncommitted Changes
+
+# Modify script1.sh but don't commit
+echo "echo 'Temporary change'" >> script1.sh
+
+# Stash changes
+git stash
+
+# Verify stash
+git stash list
+
+# Apply stashed changes back
+git stash pop
