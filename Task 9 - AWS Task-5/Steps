@@ -1,0 +1,10 @@
+Created EC2 incstant 
+
+Installed all packages to run sample html applicaiton
+
+Created code built project - linked with  the github repository
+
+created codedeploy appllication associated with ec2 insatnt
+
+Created pipleine and associuated source code as github repo and choose deploy to ec2 instance which created
+
