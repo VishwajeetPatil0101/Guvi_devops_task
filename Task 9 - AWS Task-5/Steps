@@ -1,10 +1,14 @@
-Created EC2 incstant 
+Created two roles : for deployemnt
 
-Installed all packages to run sample html applicaiton
+created ec2 instance : attace ec2 deployement role and ediited inbound rule for http and ssh
 
-Created code built project - linked with  the github repository
+created code deploy : 
+  created one application 
+  under that created one deployemnet group 
 
-created codedeploy appllication associated with ec2 insatnt
+created cicd pipeline 
+  attached GITHUB  repo 
 
-Created pipleine and associuated source code as github repo and choose deploy to ec2 instance which created
 
+now whenever make changes in git repo 
+ cicd will deploy code to ec2 
