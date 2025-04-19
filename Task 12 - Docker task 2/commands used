@@ -1,0 +1,16 @@
+First created ubuntu Ec2 instance
+
+updated System
+Installled docker on it
+
+Installed npm
+
+created one test app
+
+Created docker file and write file to compose image
+
+composed docker images
+
+runed docker container on port 3000
+
+access it using docker public ip 
