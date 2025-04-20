@@ -1,0 +1,93 @@
+Create a custom Docker image for NGINX
+Bind mount volume at /var/opt/nginx
+Deploy using Docker Compose
+Push image to Docker Hub
+
+
+
+
+✅ Step-by-Step Instructions
+
+
+Step 1: Create a project directory
+bash
+
+mkdir nginx-custom
+cd nginx-custom
+
+  
+Step 2: Create custom content for NGINX
+Create a folder for HTML content:
+bash
+
+mkdir html
+html/index.html   - write sampple code for web which is based on love
+
+
+Step 3: Create a Dockerfile
+Create a Dockerfile in nginx-custom directory:
+
+Dockerfile
+
+# Dockerfile
+FROM nginx:latest
+COPY ./html /usr/share/nginx/html
+
+
+Step 4: Build the Docker image
+Replace yourdockerhubusername with your Docker Hub username.
+bash
+docker build -t vishwajeetpatil25/nginx-custom:latest .
+
+  
+Step 5: Create Docker Compose file
+Create docker-compose.yml:
+
+yaml
+  
+version: "3.8"
+
+services:
+  nginx:
+    image: vishwajeetpatil25/nginx-custom:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - ./html:/var/opt/nginx
+
+
+
+
+
+  
+Create a nginx.conf file:
+
+nginx
+
+events {}
+
+http {
+    server {
+        listen 80;
+        root /var/opt/nginx;
+        index index.html;
+    }
+}
+
+
+
+
+Step 6: Push Docker image to Docker Hub
+bash
+
+  docker login
+  docker push yourdockerhubusername/nginx-custom:latest
+
+
+Step 7: Deploy with Docker Compose
+bash
+  docker-compose up -d
+
+  
+
+Visit: http://localhost:8080
