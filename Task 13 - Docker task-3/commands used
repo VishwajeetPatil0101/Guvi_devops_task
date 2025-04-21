@@ -81,7 +81,7 @@ Step 6: Push Docker image to Docker Hub
 bash
 
   docker login
-  docker push yourdockerhubusername/nginx-custom:latest
+  docker push vishwajeetpatil25/nginx-custom:latest
 
 
 Step 7: Deploy with Docker Compose
