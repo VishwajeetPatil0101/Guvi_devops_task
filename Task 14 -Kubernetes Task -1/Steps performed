@@ -1,0 +1,24 @@
+Here I have Already installed Docker and Kubernetes inn my machine 
+
+1.  start the minikube 
+  minikube start
+
+2. list out namespaces :
+  kubectl get namespace
+
+3. created yml file locally to create namespace
+  New-Item ./namespace.yml
+
+4. Then I have write that yml file by opening it in vscode
+  apiVersion: v1
+  Kind: Namespace
+  metadata: 
+    name: my-namespace
+
+5. I have run that yml file to create namespace
+  kubectl apply -f namespace.yml --validate=false
+
+6. I have opened Minikube dashboard to check all namespaces
+  minikube dashboard
+
+7. screenshot attached of minikube dashboard which shows list of all namespaces
