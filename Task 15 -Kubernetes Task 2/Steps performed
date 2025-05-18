@@ -110,5 +110,9 @@ Now access it via ( http://<EXTERNAL-IP> )
 
 
 
+After this all practce remember to delete EKS
+  After your practise, delete Cluster and other resources we have used in AWS Cloud to avoid billing
+    eksctl delete cluster --name ashokit-cluster4 --region ap-south-1
+
 
 
