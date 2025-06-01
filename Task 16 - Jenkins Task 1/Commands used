@@ -1,0 +1,36 @@
+Created EC2 Instance in AWS
+
+then installed Java JDK 
+
+Installed Jenkins on it
+Enabled Jenkins 
+and then Start Jenkins 
+
+sudo apt update
+sudo apt install openjdk-11-jdk -y
+java -version
+
+sudo wget -O /etc/apt/keyrings/jenkins-keyring.asc \
+  https://pkg.jenkins.io/debian/jenkins.io-2023.key
+echo "deb [signed-by=/etc/apt/keyrings/jenkins-keyring.asc]" \
+  https://pkg.jenkins.io/debian binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+sudo apt-get update
+sudo apt-get install Jenkins
+
+
+sudo systemctl enable Jenkins
+
+sudo systemctl start  jenkins
+
+
+
+Now Access Ec2 Instance Public Ip Port 8080
+
+Enter secret password to login as ADmin
+
+Now i have created User name -Vishwajeet Patil 
+
+Also Crested Frestyle job to excute shell commands to create Folders 
+
+
