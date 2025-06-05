@@ -1,1 +1,2 @@
 #we are writing here simple script to execute it in jenkins 
+echo "we are commiting code" 
