@@ -1,0 +1,23 @@
+1. To perform this task we need ann AWS account through which we will create our EC2 instance
+    we already have our AWS account
+
+2. Install AWS CLI in our windows laptop
+
+3. Install Terraform
+
+4. Now we will Write Terraform Code in VS Code 
+    1) Create provider.tf and main.tf to run the code
+
+5. We need to connect our terraform to our AWS account, for that we need to run - AWS configure  command and we will enter our credentials to connect with AWS account 
+
+6. Then Run below Terraform commands to run the code and create EC2 instances
+
+    - terraform init
+    - terraform validate
+    - terraform plan
+    - terraform apply
+
+7. Now we have our EC2 instaces created
+
+8. If you want to delete those instaces from terraform itself then run - terraform destroy
+
