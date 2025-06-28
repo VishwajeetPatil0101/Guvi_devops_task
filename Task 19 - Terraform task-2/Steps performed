@@ -1,0 +1,16 @@
+1.  I Have write main.tf file to create 2 ec2 instances in two different rigions 
+
+2.  While writing the mai.tf file, I used Userdate funtion to perform commands which install nginx at time of launch
+
+3.  this file give us IP address as a output of this two ec2 instances 
+
+4. using that ip, we can access port 80 to access nginx server
+
+terraform commands performed
+  1.  terraform init
+  2.  terraform validate
+  3.  terraform plan
+  4.  terraform apply
+
+also I have connected my aws account to terraform at start using "aws configure" command and provided access key to access account 
+
